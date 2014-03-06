@@ -18,6 +18,6 @@ class Shareable {
   {
     $className = "\\RyanNielson\\Shareable\\Buttons\\" . studly_case($name);
     $button = new $className;
-    echo $button->render();
+    echo $button->render(count($arguments) > 0 ? $arguments[0] : array());
   }
 }

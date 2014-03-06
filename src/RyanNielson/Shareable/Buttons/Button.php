@@ -2,21 +2,15 @@
 
 abstract class Button {
   
-    /**
-     * The URL to share.
-     * @var string
+     /**
+     * An array of default options for each button.
+     * @var Array
      */
-    protected $url;
-  
-    /**
-     * The title to share.
-     * @var string
-     */
-    protected $title;
-  
+    private $defaultOptions = array();
+
     /**
      * Called to render a social button.
      * @return string
      */
-    public abstract function render();
+    public abstract function render($options = array());
 }
