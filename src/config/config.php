@@ -1,5 +1,9 @@
 <?php
 
 return array(
-  'test' => 'test'
+  'default_buttons' => array(
+    'facebook',
+    'google_plus',
+    'twitter'
+  )
 );
