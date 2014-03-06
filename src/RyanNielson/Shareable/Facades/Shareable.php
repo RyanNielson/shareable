@@ -1,8 +1,8 @@
-<?php namespace RyanNielson\Shareable;
+<?php namespace RyanNielson\Shareable\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class ShareableFacade extends Facade {
+class Shareable extends Facade {
 
 	/**
 	 * Get the registered name of the component.
