@@ -1,5 +1,3 @@
-{{-- FACEBOOK (https://developers.facebook.com/docs/plugins/share-button/) --}}
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -9,4 +7,4 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-share-button" data-href="http://google.ca" data-width="100" data-type="box_count"></div>
+<div class="fb-share-button" data-href="{{{ $options['url'] }}}" data-width="{{{ $options['width'] }}}" data-type="{{{ $options['type'] }}}"></div>
