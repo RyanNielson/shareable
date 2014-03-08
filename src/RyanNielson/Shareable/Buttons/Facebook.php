@@ -8,7 +8,7 @@ class Facebook extends Button {
      * An array of default options for the twitter button.
      * @var Array
      */
-    private $defaultOptions = array(
+    protected $defaultOptions = array(
         'url' => '',
         'width' => 100,
         'type' => 'button_count'
@@ -21,6 +21,6 @@ class Facebook extends Button {
     public function render($options = array())
     {
         $options = array_merge($this->defaultOptions, $options);
-        return View::make('shareable::facebook', array('options' => $options));
+        return $this->view->make('shareable::facebook', array('options' => $options));
     }
 }

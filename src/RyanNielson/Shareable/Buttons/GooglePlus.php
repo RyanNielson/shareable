@@ -7,7 +7,7 @@ class GooglePlus extends Button {
      * An array of default options for the twitter button.
      * @var Array
      */
-    private $defaultOptions = array(
+    protected $defaultOptions = array(
         'url' => '',
         'size' => 'medium',
         'lang' => 'en-US',
@@ -29,6 +29,6 @@ class GooglePlus extends Button {
         else
             $options['height'] = '';
             
-        return View::make('shareable::google_plus', array('options' => $options));
+        return $this->view->make('shareable::google_plus', array('options' => $options));
     }
 }

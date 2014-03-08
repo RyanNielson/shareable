@@ -7,7 +7,7 @@ class Twitter extends Button {
      * An array of default options for the twitter button.
      * @var Array
      */
-    private $defaultOptions = array(
+    protected $defaultOptions = array(
         'url' => '',
         'text' => '',
         'count' => true,
@@ -17,12 +17,6 @@ class Twitter extends Button {
         'size' => '',
         'lang' => 'en'
     );
-
-    private $view = null;
-    
-    public function __construct(ViewEnvironment $view) {
-        $this->view = $view;   
-    }
     
     /**
      * Called to render a social button.
