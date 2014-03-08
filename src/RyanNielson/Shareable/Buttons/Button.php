@@ -1,7 +1,6 @@
 <?php namespace RyanNielson\Shareable\Buttons;
 
 abstract class Button {
-  
      /**
      * An array of default options for each button.
      * @var Array

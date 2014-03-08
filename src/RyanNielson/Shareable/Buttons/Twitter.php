@@ -3,20 +3,19 @@
 use View;
 
 class Twitter extends Button {
-  
     /**
      * An array of default options for the twitter button.
      * @var Array
      */
     private $defaultOptions = array(
-      'url' => '',
-      'text' => '',
-      'count' => true,
-      'via' => '',
-      'recommend' => '',
-      'hashtags' => '',
-      'size' => '',
-      'lang' => 'en'
+        'url' => '',
+        'text' => '',
+        'count' => true,
+        'via' => '',
+        'recommend' => '',
+        'hashtags' => '',
+        'size' => '',
+        'lang' => 'en'
     );
   
     /**
@@ -25,7 +24,7 @@ class Twitter extends Button {
      */
     public function render($options = array())
     {
-      $options = array_merge($this->defaultOptions, $options);
-      return View::make('shareable::twitter', array('options' => $options));
+        $options = array_merge($this->defaultOptions, $options);
+        return View::make('shareable::twitter', array('options' => $options));
     }
 }

@@ -1,13 +1,17 @@
-{{-- GOOGLE PLUS (https://developers.google.com/+/web/share/) --}}
-
-<!-- Place this tag where you want the share button to render. -->
-<div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://nielson.io"></div>
+@if ($options['annotation'] === 'inline')
+<div class="g-plus" data-action="share" data-href="{{{ $options['url'] }}}" {{{ $options['width'] ? 'data-width="' . $options['width'] . '"' : '' }}} data-height="{{{ $options['height'] }}}"></div>
+@elseif ($options['annotation'] === 'vertical-bubble')
+    <div class="g-plus" data-action="share" data-annotation="{{{ $options['annotation'] }}}" data-href="{{{ $options['url'] }}}" data-height="60"></div>
+@else
+    <div class="g-plus" data-action="share" data-annotation="{{{ $options['annotation'] }}}" data-href="{{{ $options['url'] }}}" data-height="{{{ $options['height'] }}}"></div>
+@endif
 
 <!-- Place this tag after the last share tag. -->
 <script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
+    window.___gcfg = {lang: '{{{ $options['lang'] }}}'};
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
 </script>
