@@ -1,6 +1,7 @@
 <?php namespace RyanNielson\Shareable;
 
 use Illuminate\Support\ServiceProvider;
+use RyanNielson\Shareable\Buttons\Twitter;
 
 class ShareableServiceProvider extends ServiceProvider {
 
@@ -28,9 +29,9 @@ class ShareableServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bind('shareable', function() {
-      return new Shareable;
-    });
+		$this->app->bind('shareable', function($app) {
+          return new Shareable($app['view']);
+        });
 	}
 
 	/**
