@@ -11,4 +11,10 @@ class TwitterSpec extends ObjectBehavior
     {
         $this->shouldHaveType('RyanNielson\Shareable\Buttons\Twitter');
     }
+    
+    /*function it_should_render_a_string()
+    {
+        $render = $this->render();
+        $render->shouldHaveType('string');
+    }*/
 }
