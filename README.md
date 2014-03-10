@@ -86,4 +86,3 @@ Like most Laravel packages, you can edit the configuration and views for this pa
 Edit configuration: `php artisan config:publish ryannielson/shareable`
 
 Edit views: `php artisan view:publish ryannielson/shareable`
-
