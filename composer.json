@@ -2,6 +2,8 @@
   "name": "ryannielson/shareable",
   "description": "A Laravel 4 package to make it easy to add social sharing buttons to your application.",
   "keywords": ["laravel", "social", "share", "facebook", "google plus", "twitter"],
+  "homepage": "https://github.com/RyanNielson/shareable",
+  "license": "MIT",
   "authors": [
     {
       "name": "Ryan Nielson",
