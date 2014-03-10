@@ -21,9 +21,13 @@ Then update Composer from the terminal:
 
     composer update
 
-Once complete, you now have to add the the service provider to the providers array in `app/config/app.php`. 
+Once complete, you now have to add the the service provider to the providers array in `app/config/app.php`: 
 
     'RyanNielson\Shareable\ShareableServiceProvider'
+    
+Finally, add the following entry entry to the aliases array in `app/config/app.php`:
+
+    'Shareable' => 'RyanNielson\Shareable\Facades\Shareable'
 
 That's it!
 
