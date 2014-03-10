@@ -6,10 +6,10 @@ use View;
 
 class Shareable {
     private $view = null;
-    
+
     public function __construct(ViewEnvironment $view)
     {
-        $this->view = $view;   
+        $this->view = $view;
     }
     /**
      * Returns all social sharing buttons.
@@ -18,13 +18,14 @@ class Shareable {
     public function all()
     {
         $defaultButtons = Config::get('shareable::default_buttons', array());
+        $buttons = array();
         $output = '';
-        
+
         foreach ($defaultButtons as $button) {
-            $output .= call_user_func(array($this, $button));
+            $buttons[] = call_user_func(array($this, $button));
         }
-        
-        return $output;
+
+        return $this->view->make('shareable::all', array('buttons' => $buttons));;
     }
 
     public function __call($name, $arguments)
