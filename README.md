@@ -5,9 +5,9 @@ A Laravel 4 package to make it easy to add social sharing buttons.
 [![Build Status](https://travis-ci.org/RyanNielson/shareable.png?branch=develop)](https://travis-ci.org/RyanNielson/shareable.png)
 This Laravel 4 package provides helpers for easily adding social sharing buttons to your views. This package includes support for:
 
-- `Facebook`
-- `Google Plus`
-- `Twitter`
+- Facebook
+- Google Plus
+- Twitter
 
 
 ## Installation
