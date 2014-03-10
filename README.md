@@ -11,15 +11,9 @@ This Laravel 4 package provides helpers for easily adding social sharing buttons
 
 ## Installation
 
-Edit your project's `composer.json` file to require `ryannielson/shareable`:
+Run the following Composer command in your terminal:
 
-    "require": {
-        "ryannielson/shareable": "1.0.*"
-    }
-
-Then update Composer from the terminal:
-
-    composer update
+`composer require ryannielson/shareable:"1.0.*"`
 
 Once complete, you now have to add the the service provider to the providers array in `app/config/app.php`: 
 
