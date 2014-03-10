@@ -1,7 +1,5 @@
 <?php namespace RyanNielson\Shareable\Buttons;
 
-use Illuminate\View\Environment as ViewEnvironment;
-
 class Twitter extends Button {
     /**
      * An array of default options for the twitter button.
@@ -17,9 +15,10 @@ class Twitter extends Button {
         'size' => '',
         'lang' => 'en'
     );
-    
+
     /**
      * Called to render a social button.
+     * @param  array  $options
      * @return string
      */
     public function render($options = array())

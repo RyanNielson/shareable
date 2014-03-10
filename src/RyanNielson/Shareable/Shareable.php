@@ -11,6 +11,7 @@ class Shareable {
     {
         $this->view = $view;
     }
+
     /**
      * Returns all social sharing buttons.
      * @return string
@@ -28,6 +29,10 @@ class Shareable {
         return $this->view->make('shareable::all', array('buttons' => $buttons));;
     }
 
+    /**
+     * Returns the html of an individual share button.
+     * @return string
+     */
     public function __call($name, $arguments)
     {
         $className = "\\RyanNielson\\Shareable\\Buttons\\" . studly_case($name);

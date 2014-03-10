@@ -1,9 +1,7 @@
 <?php namespace RyanNielson\Shareable\Buttons;
 
-use View;
-
 class Facebook extends Button {
-  
+
     /**
      * An array of default options for the twitter button.
      * @var Array
@@ -13,9 +11,10 @@ class Facebook extends Button {
         'width' => 100,
         'type' => 'button_count'
     );
-  
+
     /**
      * Called to render a social button.
+     * @param  array  $options
      * @return string
      */
     public function render($options = array())

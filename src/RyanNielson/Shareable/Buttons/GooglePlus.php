@@ -1,7 +1,5 @@
 <?php namespace RyanNielson\Shareable\Buttons;
 
-use View;
-
 class GooglePlus extends Button {
     /**
      * An array of default options for the twitter button.
@@ -14,9 +12,10 @@ class GooglePlus extends Button {
         'width' => null,
         'annotation' => 'bubble'
     );
-    
+
     /**
      * Called to render a social button.
+     * @param  array  $options
      * @return string
      */
     public function render($options = array())
@@ -28,7 +27,7 @@ class GooglePlus extends Button {
             $options['height'] = 24;
         else
             $options['height'] = '';
-            
+
         return $this->view->make('shareable::google_plus', array('options' => $options));
     }
 }

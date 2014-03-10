@@ -1,7 +1,6 @@
 <?php namespace RyanNielson\Shareable;
 
 use Illuminate\Support\ServiceProvider;
-use RyanNielson\Shareable\Buttons\Twitter;
 
 class ShareableServiceProvider extends ServiceProvider {
 
