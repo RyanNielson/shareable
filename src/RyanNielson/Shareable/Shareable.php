@@ -2,7 +2,6 @@
 
 use \Illuminate\Support\Facades\Config;
 use \Illuminate\View\Environment as ViewEnvironment;
-use View;
 
 class Shareable {
     private $view = null;
