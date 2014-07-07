@@ -4,6 +4,7 @@ class Facebook extends Button {
 
     /**
      * An array of default options for the twitter button.
+     *
      * @var Array
      */
     protected $defaultOptions = array(

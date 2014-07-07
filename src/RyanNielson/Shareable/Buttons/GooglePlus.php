@@ -3,6 +3,7 @@
 class GooglePlus extends Button {
     /**
      * An array of default options for the twitter button.
+     *
      * @var Array
      */
     protected $defaultOptions = array(
@@ -15,6 +16,7 @@ class GooglePlus extends Button {
 
     /**
      * Called to render a social button.
+     *
      * @param  array  $options
      * @return string
      */

@@ -1,18 +1,23 @@
 <?php namespace RyanNielson\Shareable;
 
 use \Illuminate\Support\Facades\Config;
-use \Illuminate\View\Environment as ViewEnvironment;
 
 class Shareable {
-    private $view = null;
+    /**
+     * The view environment or factory used to render views.
+     *
+     * @var \Illuminate\View\Environment|\Illuminate\View\Factory
+     */
+    private $view;
 
-    public function __construct(ViewEnvironment $view)
+    public function __construct($view)
     {
         $this->view = $view;
     }
 
     /**
      * Returns all social sharing buttons.
+     *
      * @return string
      */
     public function all()
@@ -30,6 +35,7 @@ class Shareable {
 
     /**
      * Returns the html of an individual share button.
+     *
      * @return string
      */
     public function __call($name, $arguments)

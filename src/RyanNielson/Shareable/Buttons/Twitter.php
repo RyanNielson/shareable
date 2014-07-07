@@ -3,6 +3,7 @@
 class Twitter extends Button {
     /**
      * An array of default options for the twitter button.
+     *
      * @var Array
      */
     protected $defaultOptions = array(
@@ -18,6 +19,7 @@ class Twitter extends Button {
 
     /**
      * Called to render a social button.
+     *
      * @param  array  $options
      * @return string
      */
