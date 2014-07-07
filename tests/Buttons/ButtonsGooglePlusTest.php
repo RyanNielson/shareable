@@ -7,17 +7,17 @@ class ButtonsGooglePlusTest extends PHPUnit_Framework_TestCase {
 
     public function setUp()
     {
-        $this->environment = m::mock('Illuminate\View\Environment');
+        $this->view = m::mock('Illuminate\View\Factory');
     }
-    
-	public function tearDown()
-	{
-		m::close();
-	}
-    
+
+    public function tearDown()
+    {
+        m::close();
+    }
+
     public function testRenderExists()
     {
-        $googlePlus = new GooglePlus($this->environment);
+        $googlePlus = new GooglePlus($this->view);
         $this->assertTrue(method_exists($googlePlus, 'render'),  'Class does not have method render');
     }
 }
