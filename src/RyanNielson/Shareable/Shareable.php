@@ -30,7 +30,7 @@ class Shareable {
             $buttons[] = call_user_func(array($this, $button));
         }
 
-        return $this->view->make('shareable::all', array('buttons' => $buttons));;
+        return $this->view->make('shareable::all', array('buttons' => $buttons));
     }
 
     /**
